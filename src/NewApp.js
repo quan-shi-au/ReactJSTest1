@@ -4,6 +4,8 @@ import Header from './components/layout/Header';
 import Todos from './components/Todos';
 import AddTodo from './components/AddTodo';
 import About from './components/pages/About';
+import ShoppingList from './components/pages/ShoppingList';
+
 import uuid from 'uuid';
 import axios from 'axios';
 
@@ -59,6 +61,7 @@ class NewApp extends Component {
       <Router>
         <div className="App">
           <div className="container">
+            <ShoppingList></ShoppingList>
             <h3>It's new app now.</h3>
             <Route
               exact
